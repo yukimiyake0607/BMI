@@ -21,48 +21,26 @@ class _InputPageState extends State<InputPage> {
                   child: ReusableCard(),
                 ),
                 Expanded(
-                  child: Container(
-                    margin: EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                      color: Color(0xFF323244),
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                  ),
+                  child: ReusableCard(),
                 ),
               ],
             ),
           ),
           Expanded(
-              child: Container(
-            margin: EdgeInsets.all(10),
-            decoration: BoxDecoration(
-              color: Color(0xFF323244),
-              borderRadius: BorderRadius.circular(10),
-            ),
-          )),
+            child: ReusableCard(),
+          ),
           Expanded(
-              child: Row(
-            children: [
-              Expanded(
-                child: Container(
-                  margin: EdgeInsets.all(10),
-                  decoration: BoxDecoration(
-                    color: Color(0xFF323244),
-                    borderRadius: BorderRadius.circular(10),
-                  ),
+            child: Row(
+              children: [
+                Expanded(
+                  child: ReusableCard(),
                 ),
-              ),
-              Expanded(
-                child: Container(
-                  margin: EdgeInsets.all(10),
-                  decoration: BoxDecoration(
-                    color: Color(0xFF323244),
-                    borderRadius: BorderRadius.circular(10),
-                  ),
+                Expanded(
+                  child: ReusableCard(),
                 ),
-              ),
-            ],
-          )),
+              ],
+            ),
+          ),
         ],
       ),
     );
