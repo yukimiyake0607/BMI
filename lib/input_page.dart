@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+const Color reusableCardColor = Color(0xFF323244);
+
 class InputPage extends StatefulWidget {
   @override
   _InputPageState createState() => _InputPageState();
@@ -17,27 +19,17 @@ class _InputPageState extends State<InputPage> {
           Expanded(
             child: Row(
               children: [
-                Expanded(
-                  child: ReusableCard(),
-                ),
-                Expanded(
-                  child: ReusableCard(),
-                ),
+                Expanded(child: ReusableCard(color: reusableCardColor)),
+                Expanded(child: ReusableCard(color: reusableCardColor)),
               ],
             ),
           ),
-          Expanded(
-            child: ReusableCard(),
-          ),
+          Expanded(child: ReusableCard(color: reusableCardColor)),
           Expanded(
             child: Row(
               children: [
-                Expanded(
-                  child: ReusableCard(),
-                ),
-                Expanded(
-                  child: ReusableCard(),
-                ),
+                Expanded(child: ReusableCard(color: reusableCardColor)),
+                Expanded(child: ReusableCard(color: reusableCardColor)),
               ],
             ),
           ),
