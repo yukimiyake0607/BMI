@@ -1,9 +1,14 @@
+// import
 import 'package:flutter/material.dart';
 
+
+// 変数
 const Color reusableCardColor = Color(0xFF323244);
 const bottomContainerColor = Color(0xFFEB1555);
 const bottomContainerHeight = 80.0;
 
+
+// class(InputPage)
 class InputPage extends StatefulWidget {
   @override
   _InputPageState createState() => _InputPageState();
@@ -47,6 +52,8 @@ class _InputPageState extends State<InputPage> {
   }
 }
 
+
+// class(ReusableCard)
 class ReusableCard extends StatelessWidget {
   // プロパティ
   final Color color;
