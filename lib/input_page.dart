@@ -2,12 +2,10 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-
 // 変数
 const Color reusableCardColor = Color(0xFF323244);
 const bottomContainerColor = Color(0xFFEB1555);
 const bottomContainerHeight = 80.0;
-
 
 // class(InputPage)
 class InputPage extends StatefulWidget {
@@ -53,18 +51,19 @@ class _InputPageState extends State<InputPage> {
   }
 }
 
-
 // class(ReusableCard)
 class ReusableCard extends StatelessWidget {
   // プロパティ
   final Color color;
+  final Widget? cardChild;
 
   // コンストラクタ
-  ReusableCard({required this.color});
+  ReusableCard({required this.color, this.cardChild});
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      child: cardChild,
       margin: EdgeInsets.all(10),
       decoration: BoxDecoration(
         color: color,
