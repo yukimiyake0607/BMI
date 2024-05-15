@@ -5,7 +5,8 @@ import 'icon_content.dart';
 import 'reusable_card.dart';
 
 // 変数
-const Color reusableCardColor = Color(0xFF323244);
+const Color reusableCardColorOnTap = Color(0xFF323244);
+const Color reusableCardColor = Color(0xFF23263A);
 const bottomContainerColor = Color(0xFFEB1555);
 const bottomContainerHeight = 80.0;
 
