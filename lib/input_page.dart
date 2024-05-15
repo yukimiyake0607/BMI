@@ -1,6 +1,7 @@
 // import
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'icon_content.dart';
 
 // 変数
 const Color reusableCardColor = Color(0xFF323244);
@@ -63,37 +64,7 @@ class _InputPageState extends State<InputPage> {
   }
 }
 
-class IconContent extends StatelessWidget {
-  // プロパティ
-  final IconData icon;
-  final String gender;
 
-  // コンストラクト
-  IconContent({required this.icon, required this.gender});
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Icon(
-          icon,
-          size: 80,
-        ),
-        SizedBox(
-          height: 15.0,
-        ),
-        Text(
-          gender,
-          style: TextStyle(
-            fontSize: 18,
-            color: Color(0xFF8D8E98),
-          ),
-        ),
-      ],
-    );
-  }
-}
 
 // class(ReusableCard)
 class ReusableCard extends StatelessWidget {
