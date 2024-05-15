@@ -50,28 +50,42 @@ class _InputPageState extends State<InputPage> {
             child: Row(
               children: [
                 Expanded(
-                  child: ReusableCard(
-                    color: reusableCardColor,
-                    cardChild: IconContent(
-                        icon: FontAwesomeIcons.mars, gender: 'MALE'),
+                  child: GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        updateColor(1);
+                      });
+                    },
+                    child: ReusableCard(
+                      color: maleColor,
+                      cardChild: IconContent(
+                          icon: FontAwesomeIcons.mars, gender: 'MALE'),
+                    ),
                   ),
                 ),
                 Expanded(
-                  child: ReusableCard(
-                    color: reusableCardColor,
-                    cardChild: IconContent(
-                        icon: FontAwesomeIcons.venus, gender: 'FEMALE'),
+                  child: GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        updateColor(2);
+                      });
+                    },
+                    child: ReusableCard(
+                      color: femaleColor,
+                      cardChild: IconContent(
+                          icon: FontAwesomeIcons.venus, gender: 'FEMALE'),
+                    ),
                   ),
                 ),
               ],
             ),
           ),
-          Expanded(child: ReusableCard(color: reusableCardColor)),
+          Expanded(child: ReusableCard(color: reusableCardColorOnTap)),
           Expanded(
             child: Row(
               children: [
-                Expanded(child: ReusableCard(color: reusableCardColor)),
-                Expanded(child: ReusableCard(color: reusableCardColor)),
+                Expanded(child: ReusableCard(color: reusableCardColorOnTap)),
+                Expanded(child: ReusableCard(color: reusableCardColorOnTap)),
               ],
             ),
           ),
@@ -86,6 +100,3 @@ class _InputPageState extends State<InputPage> {
     );
   }
 }
-
-
-
