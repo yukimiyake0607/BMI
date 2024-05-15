@@ -5,6 +5,11 @@ class IconContent extends StatelessWidget {
   final IconData icon;
   final String gender;
 
+  final genderTestStyle = TextStyle(
+    fontSize: 18,
+    color: Color(0xFF8D8E98),
+  );
+
   // コンストラクト
   IconContent({required this.icon, required this.gender});
 
@@ -22,10 +27,7 @@ class IconContent extends StatelessWidget {
         ),
         Text(
           gender,
-          style: TextStyle(
-            fontSize: 18,
-            color: Color(0xFF8D8E98),
-          ),
+          style: genderTestStyle,
         ),
       ],
     );
