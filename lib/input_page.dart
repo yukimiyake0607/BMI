@@ -17,6 +17,27 @@ class InputPage extends StatefulWidget {
 }
 
 class _InputPageState extends State<InputPage> {
+  Color maleColor = reusableCardColor;
+  Color femaleColor = reusableCardColor;
+
+  void updateColor(int genderNumber) {
+    // male==1, female==2
+    if (genderNumber == 1) {
+      if (maleColor == reusableCardColor) {
+        maleColor = reusableCardColorOnTap;
+      } else {
+        maleColor = reusableCardColor;
+      }
+    }
+    if (genderNumber == 2) {
+      if (femaleColor == reusableCardColor) {
+        femaleColor = reusableCardColorOnTap;
+      } else {
+        femaleColor = reusableCardColor;
+      }
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
