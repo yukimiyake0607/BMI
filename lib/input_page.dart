@@ -25,7 +25,29 @@ class _InputPageState extends State<InputPage> {
           Expanded(
             child: Row(
               children: [
-                Expanded(child: ReusableCard(color: reusableCardColor)),
+                Expanded(
+                  child: ReusableCard(
+                    color: reusableCardColor,
+                    cardChild: Column(
+                      children: [
+                        Icon(
+                          FontAwesomeIcons.mars,
+                          size: 80,
+                        ),
+                        SizedBox(
+                          height: 15.0,
+                        ),
+                        Text(
+                          'MALE',
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: Color(0xFF8D8E98),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
                 Expanded(child: ReusableCard(color: reusableCardColor)),
               ],
             ),
