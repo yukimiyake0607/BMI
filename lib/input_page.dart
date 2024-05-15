@@ -28,27 +28,17 @@ class _InputPageState extends State<InputPage> {
                 Expanded(
                   child: ReusableCard(
                     color: reusableCardColor,
-                    cardChild: Column(
-                      children: [
-                        Icon(
-                          FontAwesomeIcons.mars,
-                          size: 80,
-                        ),
-                        SizedBox(
-                          height: 15.0,
-                        ),
-                        Text(
-                          'MALE',
-                          style: TextStyle(
-                            fontSize: 18,
-                            color: Color(0xFF8D8E98),
-                          ),
-                        ),
-                      ],
-                    ),
+                    cardChild: IconContent(
+                        icon: FontAwesomeIcons.mars, gender: 'MALE'),
                   ),
                 ),
-                Expanded(child: ReusableCard(color: reusableCardColor)),
+                Expanded(
+                  child: ReusableCard(
+                    color: reusableCardColor,
+                    cardChild: IconContent(
+                        icon: FontAwesomeIcons.venus, gender: 'FEMALE'),
+                  ),
+                ),
               ],
             ),
           ),
@@ -69,6 +59,37 @@ class _InputPageState extends State<InputPage> {
           ),
         ],
       ),
+    );
+  }
+}
+
+class IconContent extends StatelessWidget {
+  // プロパティ
+  final IconData icon;
+  final String gender;
+
+  // コンストラクト
+  IconContent({required this.icon, required this.gender});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Icon(
+          icon,
+          size: 80,
+        ),
+        SizedBox(
+          height: 15.0,
+        ),
+        Text(
+          gender,
+          style: TextStyle(
+            fontSize: 18,
+            color: Color(0xFF8D8E98),
+          ),
+        ),
+      ],
     );
   }
 }
