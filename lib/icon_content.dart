@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
+import 'constants.dart';
 
 class IconContent extends StatelessWidget {
   // プロパティ
   final IconData icon;
   final String gender;
-
-  final genderTestStyle = TextStyle(
-    fontSize: 18,
-    color: Color(0xFF8D8E98),
-  );
 
   // コンストラクト
   IconContent({required this.icon, required this.gender});
