@@ -39,8 +39,8 @@ class _InputPageState extends State<InputPage> {
                       });
                     },
                     color: genderSelected == Gender.male
-                        ? activeReusableCardColor
-                        : inactiveReusableCardColor,
+                        ? kActiveReusableCardColor
+                        : kInactiveReusableCardColor,
                     cardChild: IconContent(
                         icon: FontAwesomeIcons.mars, gender: 'MALE'),
                   ),
@@ -53,8 +53,8 @@ class _InputPageState extends State<InputPage> {
                       });
                     },
                     color: genderSelected == Gender.female
-                        ? activeReusableCardColor
-                        : inactiveReusableCardColor,
+                        ? kActiveReusableCardColor
+                        : kInactiveReusableCardColor,
                     cardChild: IconContent(
                         icon: FontAwesomeIcons.venus, gender: 'FEMALE'),
                   ),
@@ -62,19 +62,19 @@ class _InputPageState extends State<InputPage> {
               ],
             ),
           ),
-          Expanded(child: ReusableCard(color: activeReusableCardColor)),
+          Expanded(child: ReusableCard(color: kActiveReusableCardColor)),
           Expanded(
             child: Row(
               children: [
-                Expanded(child: ReusableCard(color: activeReusableCardColor)),
-                Expanded(child: ReusableCard(color: activeReusableCardColor)),
+                Expanded(child: ReusableCard(color: kActiveReusableCardColor)),
+                Expanded(child: ReusableCard(color: kActiveReusableCardColor)),
               ],
             ),
           ),
           Container(
-            color: bottomContainerColor,
+            color: kBottomContainerColor,
             width: double.infinity,
-            height: bottomContainerHeight,
+            height: kBottomContainerHeight,
             margin: EdgeInsets.only(top: 10.0),
           ),
         ],
