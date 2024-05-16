@@ -5,8 +5,8 @@ import 'icon_content.dart';
 import 'reusable_card.dart';
 
 // 変数
-const Color reusableCardColorOnTap = Color(0xFF323244);
-const Color reusableCardColor = Color(0xFF23263A);
+const Color activeReusableCardColor = Color(0xFF323244);
+const Color inactiveReusableCardColor = Color(0xFF23263A);
 const bottomContainerColor = Color(0xFFEB1555);
 const bottomContainerHeight = 80.0;
 
@@ -87,12 +87,12 @@ class _InputPageState extends State<InputPage> {
               ],
             ),
           ),
-          Expanded(child: ReusableCard(color: reusableCardColorOnTap)),
+          Expanded(child: ReusableCard(color: activeReusableCardColor)),
           Expanded(
             child: Row(
               children: [
-                Expanded(child: ReusableCard(color: reusableCardColorOnTap)),
-                Expanded(child: ReusableCard(color: reusableCardColorOnTap)),
+                Expanded(child: ReusableCard(color: activeReusableCardColor)),
+                Expanded(child: ReusableCard(color: activeReusableCardColor)),
               ],
             ),
           ),
