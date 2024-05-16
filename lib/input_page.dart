@@ -25,6 +25,7 @@ class _InputPageState extends State<InputPage> {
     if (genderNumber == 1) {
       if (maleColor == reusableCardColor) {
         maleColor = reusableCardColorOnTap;
+        femaleColor = reusableCardColor;
       } else {
         maleColor = reusableCardColor;
       }
@@ -32,6 +33,7 @@ class _InputPageState extends State<InputPage> {
     if (genderNumber == 2) {
       if (femaleColor == reusableCardColor) {
         femaleColor = reusableCardColorOnTap;
+        maleColor = reusableCardColor;
       } else {
         femaleColor = reusableCardColor;
       }
