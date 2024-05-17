@@ -68,14 +68,14 @@ class _InputPageState extends State<InputPage> {
               color: kActiveReusableCardColor,
               cardChild: Column(
                 children: <Widget>[
-                  Text('HEIGHT', style: kGenderTestStyle),
+                  Text('HEIGHT', style: kLabelTextstyle),
                   Row(
                     children: <Widget>[
                       Text(
                         '170',
                         style: kNumberTextstyle,
                       ),
-                      Text('cm'),
+                      Text('cm', style: kLabelTextstyle),
                     ],
                   ),
                 ],
