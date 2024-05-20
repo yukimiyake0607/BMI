@@ -169,7 +169,28 @@ class _InputPageState extends State<InputPage> {
                           style: kNumberTextstyle,
                         ),
                         Row(
-                          children: [],
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            RoundIconButton(
+                              icon: FontAwesomeIcons.minus,
+                              onpress: () {
+                                setState(() {
+                                  age--;
+                                });
+                              },
+                            ),
+                            SizedBox(
+                              width: 15,
+                            ),
+                            RoundIconButton(
+                              icon: FontAwesomeIcons.plus,
+                              onpress: () {
+                                setState(() {
+                                  age++;
+                                });
+                              },
+                            ),
+                          ],
                         ),
                       ],
                     ),
