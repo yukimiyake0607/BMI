@@ -210,6 +210,7 @@ class _InputPageState extends State<InputPage> {
                   style: kLargeButtonTextstyle,
                 ),
               ),
+              padding: EdgeInsets.only(bottom: 20.0),
               color: kBottomContainerColor,
               width: double.infinity,
               height: kBottomContainerHeight,
