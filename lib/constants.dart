@@ -10,4 +10,12 @@ final kLabelTextstyle = TextStyle(
   color: Color(0xFF8D8E98),
 );
 
-final kNumberTextstyle = TextStyle(fontSize: 50, fontWeight: FontWeight.w900);
+final kNumberTextstyle = TextStyle(
+  fontSize: 50,
+  fontWeight: FontWeight.w900,
+);
+
+final kLargeButtonTextstyle = TextStyle(
+  fontSize: 25.0,
+  fontWeight: FontWeight.bold,
+);
