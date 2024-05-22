@@ -5,6 +5,7 @@ import 'bottom_button.dart';
 import 'constants.dart';
 import 'icon_content.dart';
 import 'reusable_card.dart';
+import 'round_icon_button.dart';
 
 // 変数
 enum Gender {
@@ -212,25 +213,4 @@ class _InputPageState extends State<InputPage> {
   }
 }
 
-class RoundIconButton extends StatelessWidget {
-  final IconData? icon;
-  final VoidCallback? onpress;
 
-  RoundIconButton({this.icon, this.onpress});
-
-  @override
-  Widget build(BuildContext context) {
-    return RawMaterialButton(
-      onPressed: onpress,
-      elevation: 0.0,
-      highlightElevation: 10.0,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(28.0)),
-      fillColor: Color(0xFF4C4F5E),
-      constraints: BoxConstraints.tightFor(
-        width: 56,
-        height: 56,
-      ),
-      child: Icon(icon),
-    );
-  }
-}
