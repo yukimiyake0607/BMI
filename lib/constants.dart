@@ -19,3 +19,24 @@ final kLargeButtonTextstyle = TextStyle(
   fontSize: 25.0,
   fontWeight: FontWeight.bold,
 );
+
+final kResultTitleTextstyle = TextStyle(
+  fontSize: 50.0,
+  fontWeight: FontWeight.bold,
+);
+
+final kResultTextStyle = TextStyle(
+  color: Color(0xFF24D876),
+  fontSize: 22.0,
+  fontWeight: FontWeight.bold,
+);
+
+final kBMITextstyle = TextStyle(
+  fontSize: 100.0,
+  fontWeight: FontWeight.bold,
+);
+
+final kBMIBodyTextstyle = TextStyle(
+  fontSize: 22.0,
+  fontWeight: FontWeight.bold,
+);
